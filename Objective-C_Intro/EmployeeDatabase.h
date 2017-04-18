@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Employee"
+#import "Employee.h"
 
 @interface EmployeeDatabase : NSObject
 
@@ -21,6 +21,6 @@
 -(void)remove:(Employee *)employee;
 -(void)removeEmployeeAtIndex:(int)index;
 
--(void)remove:(allEmployees);
+-(void)removeAllEmployees;
 
 @end
