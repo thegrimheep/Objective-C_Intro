@@ -11,22 +11,23 @@
 @implementation Employee
 
 -(instancetype)initWithFirstName: (NSString *) firstName
-                        lastname: (NSString *) lastName
-                          andAge: (NSNumber *) age
+                        lastName: (NSString *) lastName
+                             age: (NSNumber *) age
+                           email: (NSString *) email
                    yearsEmployed: (NSNumber *) yearsEmployed
                       andManager: (NSString *) managerName {
-    self = [super initWithFirstName: firstName lastName: lastName andAGE: age];
+    self = [super initWithFirstName:firstName lastname:lastName andAge:age];
     
     if(self) {
         _yearsEmployed = yearsEmployed;
-        _ManagerName = managerName;
+        _managerName = managerName;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
     }
     return self;
 }
 
--(id)copyWithZone: (NSZone *) zolne {
-    Employee *employee = [super copyWithZone];
+-(id)copyWithZone: (NSZone *) zone {
+    Employee *employee = [[Employee alloc] init];
     
     employee.employeeNumber = self.employeeNumber;
     employee.managerName = self.managerName;
@@ -36,3 +37,4 @@
 }
 
 @end
+

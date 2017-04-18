@@ -6,16 +6,21 @@
 //  Copyright © 2017 David Porter. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Person.h"
 
-@interface Employee : NSObject
+@interface Employee : Person
+
+@property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSString *managerName;
+@property (strong, nonatomic) NSNumber *yearsEmployed;
+@property (strong, nonatomic) NSNumber *employeeNumber;
 
 -(instancetype)initWithFirstName: (NSString *) firstName
                         lastname: (NSString *) lastName
-                          andAge: (NSNumber *) age
+                             age: (NSNumber *) age
+                           email: (NSString *) email
                    yearsEmployed: (NSNumber *) yearsEmployed
                       andManager: (NSString *) managerName;
 
 @end
 
-@end
