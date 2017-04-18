@@ -7,18 +7,14 @@
 //
 
 #import "ViewController.h"
-
 #import "Person.h"
-
 #import "ViewControllerDataSource.h"
-
 #import "Employee.h"
-
 #import "EmployeeDatabase.h"
 
 static int gMoveNumber = 10;
 
-@interface ViewController () <ViewControllerDataSource>
+@interface ViewController ()
 
 @end
 
@@ -26,34 +22,12 @@ static int gMoveNumber = 10;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    Employee *original = [[Employee alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" age:@30 yearsEmployed:@2 andManager:@"Brook"];
-//    
-//    Employee *newInstructor = [original copy];
-//    
-//    newInstructor.firstName = @"Mike";
-//    
-//    NSLog(original.firstName);
+    
+    Employee *orignal = [[Employee alloc] initWithFirstName:@"David" lastname:@"Porter" age:@40 email:@"davidporter@icloud.com" yearsEmployed:@2 andManager:@"Julie"];
+
+    Employee *emp2 = [[Employee alloc] initWithFirstName:@"Steve" lastname:@"Jones" age:@42 email:@"stevejones@gmail.com" yearsEmployed:@4 andManager:@"David"];
+
 }
-
-//    [self requiredNumberForEachItem:100];
-//    
-//    Person *david = [[Person alloc] init];
-//    
-//    [david setName: @"David "];
-    
-    
-    
-//    [david walk];
-//    [Person sayHello];
-//    
-//    NSLog(@"%i", gMoveNumber);
-//}
-
-//-(void)requiredNumberForEachItem:(int)number {
-//    
-//}
-
-    
 
 
 
