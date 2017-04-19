@@ -15,7 +15,7 @@
 
 @implementation EmployeeDatabase
 
-+(instancetype)shared {
++(instancetype)shared {  //Code snippet dispatch once.
     
     static EmployeeDatabase *shared = nil;
     
