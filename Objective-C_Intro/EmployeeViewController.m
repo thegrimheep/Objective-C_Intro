@@ -19,19 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.dataSource = self;
-//    self.tableView.delegate = self;
-    
+    self.tableView.dataSource = self;    
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     NSArray *employees = [[EmployeeDatabase shared] allEmployees];
     Employee *employee = employees[indexPath.row];
     
     cell.textLabel.text = employee.firstName;
-    return cell
+    return cell;
     
 }
 

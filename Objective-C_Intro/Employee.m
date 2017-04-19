@@ -22,6 +22,7 @@
         _yearsEmployed = yearsEmployed;
         _managerName = managerName;
         _employeeNumber = [NSNumber numberWithInt:arc4random_uniform(1000)];
+        _email = email;
     }
     return self;
 }

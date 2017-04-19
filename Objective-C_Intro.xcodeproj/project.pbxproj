@@ -74,22 +74,9 @@
 		A1399B5F1EA52D27000E4760 /* Objective-C_Intro */ = {
 			isa = PBXGroup;
 			children = (
-				A1399B631EA52D27000E4760 /* AppDelegate.h */,
-				A1399B641EA52D27000E4760 /* AppDelegate.m */,
-				A1399B7D1EA54839000E4760 /* ViewControllerDataSource.h */,
-				A1399B771EA52F0B000E4760 /* Person.h */,
-				A1399B781EA52F0B000E4760 /* Person.m */,
-				A1399B661EA52D27000E4760 /* ViewController.h */,
-				A1399B671EA52D27000E4760 /* ViewController.m */,
-				A165D48C1EA6D9DD00B90359 /* EmployeeViewController.h */,
-				A165D48D1EA6D9DD00B90359 /* EmployeeViewController.m */,
-				A1399B7E1EA6879B000E4760 /* EmployeeDatabase.h */,
-				A1399B7F1EA6879B000E4760 /* EmployeeDatabase.m */,
-				A19899401EA6A90D0081B817 /* Employee.h */,
-				A19899411EA6A90D0081B817 /* Employee.m */,
-				A1399B7A1EA54551000E4760 /* ViewController+Identifier.h */,
-				A1399B7B1EA54551000E4760 /* ViewController+Identifier.m */,
-				A1399B691EA52D27000E4760 /* Main.storyboard */,
+				A165D48F1EA8154400B90359 /* Model */,
+				A165D4911EA815B200B90359 /* View */,
+				A165D4901EA8155700B90359 /* Controller */,
 				A1399B6C1EA52D27000E4760 /* Assets.xcassets */,
 				A1399B6E1EA52D27000E4760 /* LaunchScreen.storyboard */,
 				A1399B711EA52D27000E4760 /* Info.plist */,
@@ -104,6 +91,43 @@
 				A1399B611EA52D27000E4760 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A165D48F1EA8154400B90359 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1399B771EA52F0B000E4760 /* Person.h */,
+				A1399B781EA52F0B000E4760 /* Person.m */,
+				A1399B7E1EA6879B000E4760 /* EmployeeDatabase.h */,
+				A1399B7F1EA6879B000E4760 /* EmployeeDatabase.m */,
+				A19899401EA6A90D0081B817 /* Employee.h */,
+				A19899411EA6A90D0081B817 /* Employee.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A165D4901EA8155700B90359 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1399B7D1EA54839000E4760 /* ViewControllerDataSource.h */,
+				A1399B661EA52D27000E4760 /* ViewController.h */,
+				A1399B671EA52D27000E4760 /* ViewController.m */,
+				A165D48C1EA6D9DD00B90359 /* EmployeeViewController.h */,
+				A165D48D1EA6D9DD00B90359 /* EmployeeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A165D4911EA815B200B90359 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1399B631EA52D27000E4760 /* AppDelegate.h */,
+				A1399B641EA52D27000E4760 /* AppDelegate.m */,
+				A1399B7A1EA54551000E4760 /* ViewController+Identifier.h */,
+				A1399B7B1EA54551000E4760 /* ViewController+Identifier.m */,
+				A1399B691EA52D27000E4760 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
