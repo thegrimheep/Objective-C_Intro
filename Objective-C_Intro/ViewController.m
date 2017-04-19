@@ -12,7 +12,7 @@
 #import "Employee.h"
 #import "EmployeeDatabase.h"
 
-static int gMoveNumber = 10;
+//static int gMoveNumber = 10;
 
 @interface ViewController ()
 
@@ -23,16 +23,16 @@ static int gMoveNumber = 10;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Employee *orignal = [[Employee alloc] initWithFirstName:@"David" lastname:@"Porter" age:@40 email:@"davidporter@icloud.com" yearsEmployed:@2 andManager:@"Julie"];
-
-    Employee *emp2 = [[Employee alloc] initWithFirstName:@"Steve" lastname:@"Jones" age:@42 email:@"stevejones@gmail.com" yearsEmployed:@4 andManager:@"David"];
-    
-    Employee *emp3 = [[Employee alloc] initWithFirstName:@"Castro" lastname:@"Castro" age:@26 email:@"Castro@codefellows.com" yearsEmployed:@2 andManager:@"Adam"];
-
-    
-    [[EmployeeDatabase shared] add:orignal];
-    [[EmployeeDatabase shared] add:emp2];
-    [[EmployeeDatabase shared] add:emp3];
+//    Employee *orignal = [[Employee alloc] initWithFirstName:@"David" lastName:@"Porter" age:@40 email:@"davidporter@icloud.com" yearsEmployed:@2 andManager:@"Julie"];
+//
+//    Employee *emp2 = [[Employee alloc] initWithFirstName:@"Steve" lastName:@"Jones" age:@42 email:@"stevejones@gmail.com" yearsEmployed:@4 andManager:@"David"];
+//    
+//    Employee *emp3 = [[Employee alloc] initWithFirstName:@"Castro" lastName:@"Castro" age:@26 email:@"Castro@codefellows.com" yearsEmployed:@2 andManager:@"Adam"];
+//
+//    
+//    [[EmployeeDatabase shared] add:orignal];
+//    [[EmployeeDatabase shared] add:emp2];
+//    [[EmployeeDatabase shared] add:emp3];
 }
 
 

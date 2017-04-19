@@ -10,12 +10,17 @@
 #import "EmployeeDatabase.h"
 #import "ViewController.h"
 
-@interface EmployeeViewController () <UITableViewDataSource, UITabBarDelegate>
+@interface EmployeeViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation EmployeeViewController
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +28,7 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EmployeeCell" forIndexPath:indexPath];
     
     NSArray *employees = [[EmployeeDatabase shared] allEmployees];
     Employee *employee = employees[indexPath.row];

@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSNumber *employeeNumber;
 
 -(instancetype)initWithFirstName: (NSString *) firstName
-                        lastname: (NSString *) lastName
+                        lastName: (NSString *) lastName
                              age: (NSNumber *) age
                            email: (NSString *) email
                    yearsEmployed: (NSNumber *) yearsEmployed
