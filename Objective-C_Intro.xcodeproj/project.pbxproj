@@ -16,6 +16,7 @@
 		A1399B791EA52F0B000E4760 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B781EA52F0B000E4760 /* Person.m */; };
 		A1399B7C1EA54551000E4760 /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B7B1EA54551000E4760 /* ViewController+Identifier.m */; };
 		A1399B801EA6879B000E4760 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B7F1EA6879B000E4760 /* EmployeeDatabase.m */; };
+		A165D48E1EA6D9DD00B90359 /* EmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A165D48D1EA6D9DD00B90359 /* EmployeeViewController.m */; };
 		A19899421EA6A90D0081B817 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A19899411EA6A90D0081B817 /* Employee.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		A1399B7D1EA54839000E4760 /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
 		A1399B7E1EA6879B000E4760 /* EmployeeDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeDatabase.h; sourceTree = "<group>"; };
 		A1399B7F1EA6879B000E4760 /* EmployeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeDatabase.m; sourceTree = "<group>"; };
+		A165D48C1EA6D9DD00B90359 /* EmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeViewController.h; sourceTree = "<group>"; };
+		A165D48D1EA6D9DD00B90359 /* EmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeViewController.m; sourceTree = "<group>"; };
 		A19899401EA6A90D0081B817 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		A19899411EA6A90D0081B817 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,8 @@
 				A1399B781EA52F0B000E4760 /* Person.m */,
 				A1399B661EA52D27000E4760 /* ViewController.h */,
 				A1399B671EA52D27000E4760 /* ViewController.m */,
+				A165D48C1EA6D9DD00B90359 /* EmployeeViewController.h */,
+				A165D48D1EA6D9DD00B90359 /* EmployeeViewController.m */,
 				A1399B7E1EA6879B000E4760 /* EmployeeDatabase.h */,
 				A1399B7F1EA6879B000E4760 /* EmployeeDatabase.m */,
 				A19899401EA6A90D0081B817 /* Employee.h */,
@@ -175,6 +180,7 @@
 			files = (
 				A1399B681EA52D27000E4760 /* ViewController.m in Sources */,
 				A1399B651EA52D27000E4760 /* AppDelegate.m in Sources */,
+				A165D48E1EA6D9DD00B90359 /* EmployeeViewController.m in Sources */,
 				A1399B801EA6879B000E4760 /* EmployeeDatabase.m in Sources */,
 				A1399B7C1EA54551000E4760 /* ViewController+Identifier.m in Sources */,
 				A1399B791EA52F0B000E4760 /* Person.m in Sources */,

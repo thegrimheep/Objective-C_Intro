@@ -27,6 +27,9 @@ static int gMoveNumber = 10;
 
     Employee *emp2 = [[Employee alloc] initWithFirstName:@"Steve" lastname:@"Jones" age:@42 email:@"stevejones@gmail.com" yearsEmployed:@4 andManager:@"David"];
 
+    
+    [[EmployeeDatabase shared] add:orignal];
+    [[EmployeeDatabase shared] add:emp2];
 }
 
 
