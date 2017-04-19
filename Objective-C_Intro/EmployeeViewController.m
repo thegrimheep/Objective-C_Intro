@@ -28,7 +28,7 @@
     UITableViewCell *cell [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     NSArray *employees = [[EmployeeDatabase shared] allEmployees];
-    Employee *employees = employee[indexPath.row];
+    Employee *employee = employees[indexPath.row];
     
     cell.textLabel.text = employee.firstName;
     return cell
