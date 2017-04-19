@@ -8,7 +8,7 @@
 
 #import "Person.h"
 
-@interface Employee : Person
+@interface Employee : Person <NSCopying, NSCoding>
 
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *managerName;
@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSNumber *employeeNumber;
 
 -(instancetype)initWithFirstName: (NSString *) firstName
-                        lastname: (NSString *) lastName
+                        lastName: (NSString *) lastName
                              age: (NSNumber *) age
                            email: (NSString *) email
                    yearsEmployed: (NSNumber *) yearsEmployed

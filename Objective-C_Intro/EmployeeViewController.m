@@ -7,29 +7,40 @@
 //
 
 #import "EmployeeViewController.h"
+#import "EmployeeDatabase.h"
+#import "ViewController.h"
 
-@interface EmployeeViewController () <UITableViewDataSource, UITabBarDelegate>
+@interface EmployeeViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation EmployeeViewController
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
+    self.tableView.dataSource = self;    
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EmployeeCell" forIndexPath:indexPath];
+    
+    NSArray *employees = [[EmployeeDatabase shared] allEmployees];
+    Employee *employee = employees[indexPath.row];
+    
+    cell.textLabel.text = employee.firstName;
+    return cell;
     
 }
 
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    UITableViewCell *cell [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
-//    NSMutableArray *employee = [EmployeeDatabase shared]
-//}
-//
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    
-//}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[EmployeeDatabase shared] count];
+}
 
 
 
