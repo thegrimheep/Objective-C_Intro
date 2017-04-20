@@ -18,12 +18,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *saveNewEmployee;
 @property (weak, nonatomic) IBOutlet UIButton *cancelNewEmployee;
 
-
 @end
 
 @implementation AddEmployeeViewController
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
