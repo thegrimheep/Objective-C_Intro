@@ -35,7 +35,6 @@
     
     cell.textLabel.text = employee.firstName;
     return cell;
-    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
