@@ -10,13 +10,14 @@
 #import "Employee.h"
 #import "EmployeeDatabase.h"
 
-@interface AddEmployeeViewController ()
+@interface AddEmployeeViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 
 @property (weak, nonatomic) IBOutlet UIButton *saveNewEmployee;
 @property (weak, nonatomic) IBOutlet UIButton *cancelNewEmployee;
+
 
 @end
 
@@ -37,6 +38,10 @@
 
 - (IBAction)cancelNewEmployee:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)backgroundTapped:(id)sender {
+    [self.view endEditing:YES];
 }
 
 @end

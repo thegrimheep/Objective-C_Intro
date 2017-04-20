@@ -67,7 +67,7 @@
                         <viewControllerLayoutGuide type="top" id="Zw1-Qn-QDI"/>
                         <viewControllerLayoutGuide type="bottom" id="zPC-mJ-h9D"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d49-p9-3aa">
+                    <view key="view" contentMode="scaleToFill" id="d49-p9-3aa" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -78,7 +78,10 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="V6o-iC-CoD" id="fo2-2q-CWy"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SrT-Kj-alJ">
                                 <rect key="frame" x="10" y="70" width="355" height="30"/>
@@ -87,13 +90,13 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fz3-a2-GPv">
                                 <rect key="frame" x="10" y="110" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HId-y7-Mly">
                                 <rect key="frame" x="10" y="508" width="355" height="45"/>
@@ -140,6 +143,10 @@
                             <constraint firstAttribute="trailing" secondItem="fz3-a2-GPv" secondAttribute="trailing" constant="10" id="x92-44-Osm"/>
                             <constraint firstAttribute="trailing" secondItem="SrT-Kj-alJ" secondAttribute="trailing" constant="10" id="xzz-pC-RlD"/>
                         </constraints>
+                        <connections>
+                            <action selector="backgroundTapped:" destination="V6o-iC-CoD" eventType="valueChanged" id="RiM-id-FdG"/>
+                            <action selector="backgroundTapped:" destination="V6o-iC-CoD" eventType="touchUpInside" id="nqV-Ju-CYF"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="cancelNewEmployee" destination="3T8-22-JqA" id="Kps-Q5-9Bn"/>

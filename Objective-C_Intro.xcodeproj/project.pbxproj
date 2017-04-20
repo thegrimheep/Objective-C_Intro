@@ -13,12 +13,12 @@
 		A1399B6B1EA52D27000E4760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1399B691EA52D27000E4760 /* Main.storyboard */; };
 		A1399B6D1EA52D27000E4760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1399B6C1EA52D27000E4760 /* Assets.xcassets */; };
 		A1399B701EA52D27000E4760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1399B6E1EA52D27000E4760 /* LaunchScreen.storyboard */; };
-		A1399B791EA52F0B000E4760 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B781EA52F0B000E4760 /* Person.m */; };
+		A1399B791EA52F0B000E4760 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B781EA52F0B000E4760 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A1399B7C1EA54551000E4760 /* ViewController+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B7B1EA54551000E4760 /* ViewController+Identifier.m */; };
 		A1399B801EA6879B000E4760 /* EmployeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1399B7F1EA6879B000E4760 /* EmployeeDatabase.m */; };
 		A165D48E1EA6D9DD00B90359 /* EmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A165D48D1EA6D9DD00B90359 /* EmployeeViewController.m */; };
 		A165D4941EA818E300B90359 /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A165D4931EA818E300B90359 /* AddEmployeeViewController.m */; };
-		A19899421EA6A90D0081B817 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A19899411EA6A90D0081B817 /* Employee.m */; };
+		A19899421EA6A90D0081B817 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A19899411EA6A90D0081B817 /* Employee.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

@@ -10,6 +10,33 @@
 
 @implementation Employee
 
+-(void)setEmail:(NSString *)email {
+    if(_email != email) {
+        [email retain];
+        [_email release];
+        
+        _email = email;
+    }
+}
+
+-(void)setYearsEmployed:(NSNumber *)yearsEmployed {
+    if(_yearsEmployed != yearsEmployed) {
+        [yearsEmployed retain];
+        [_yearsEmployed release];
+        
+        _yearsEmployed = yearsEmployed;
+    }
+}
+
+-(void)setManagerName:(NSString *)managerName {
+    if(_managerName != managerName) {
+        [managerName retain];
+        [_managerName release];
+        
+        _managerName = managerName;
+    }
+}
+
 -(instancetype)initWithFirstName: (NSString *) firstName
                         lastName: (NSString *) lastName
                              age: (NSNumber *) age
@@ -46,10 +73,6 @@
     [aCoder encodeObject:self.firstName forKey:@"firstName"];
     [aCoder encodeObject:self.lastName forKey:@"lastName"];
     [aCoder encodeObject:self.age forKey:@"age"];
-    [aCoder encodeObject:self.email forKey:@"email"];
-    [aCoder encodeObject:self.yearsEmployed forKey:@"yearsEmployed"];
-    [aCoder encodeObject:self.managerName forKey:@"managerName"];
-    [aCoder encodeObject:self.employeeNumber forKey:@"employeeNumber"];
 }
 
 -(id)copyWithZone: (NSZone *) zone {
