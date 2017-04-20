@@ -19,17 +19,6 @@
                           andAge: (NSNumber *) age;
 
 
-
-//Name accessor methods. 
-//-(NSString *)name;
-//-(void)setName:(NSString *)name;
-
-//Instance Method
--(void)walk;
-
-//Class Method
-+(void)sayHello;
-
 @end
 
 
