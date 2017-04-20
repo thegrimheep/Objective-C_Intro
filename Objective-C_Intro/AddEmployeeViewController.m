@@ -12,18 +12,23 @@
 
 @interface AddEmployeeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
-
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
-
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+
+@property (weak, nonatomic) IBOutlet UIButton *saveNewEmployee;
+@property (weak, nonatomic) IBOutlet UIButton *cancelNewEmployee;
+
 
 @end
 
 @implementation AddEmployeeViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _saveNewEmployee.layer.cornerRadius = 10;
+    _cancelNewEmployee.layer.cornerRadius = 10;
 }
 
 - (IBAction)saveNewEmployee:(id)sender {
@@ -31,8 +36,6 @@
     
     [[EmployeeDatabase shared] add:employee];
     [self dismissViewControllerAnimated:YES completion:nil];
-
-
 }
 
 - (IBAction)cancelNewEmployee:(id)sender {
