@@ -33,7 +33,7 @@
     NSArray *employees = [[EmployeeDatabase shared] allEmployees];
     Employee *employee = employees[indexPath.row];
     
-    cell.textLabel.text = employee.firstName;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",employee.firstName, employee.lastName];
     
     return cell;
 }
