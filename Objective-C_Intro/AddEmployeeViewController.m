@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *ageTextField;
+@property (weak, nonatomic) IBOutlet UITextField *managerNameTextField;
 
 @property (weak, nonatomic) IBOutlet UIButton *saveNewEmployee;
 @property (weak, nonatomic) IBOutlet UIButton *cancelNewEmployee;

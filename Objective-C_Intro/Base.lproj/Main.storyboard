@@ -124,21 +124,40 @@
                                     <action selector="cancelNewEmployee:" destination="V6o-iC-CoD" eventType="touchUpInside" id="y2w-gO-pFX"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-Ux-8bj">
+                                <rect key="frame" x="10" y="150" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manager Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xS-CQ-PIx">
+                                <rect key="frame" x="10" y="190" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vd3-Rm-vWG" secondAttribute="trailing" constant="10" id="8ej-qe-fDY"/>
                             <constraint firstItem="SrT-Kj-alJ" firstAttribute="top" secondItem="vd3-Rm-vWG" secondAttribute="bottom" constant="10" id="93I-L4-svb"/>
                             <constraint firstItem="zPC-mJ-h9D" firstAttribute="top" secondItem="3T8-22-JqA" secondAttribute="bottom" constant="59" id="EDZ-13-qX2"/>
+                            <constraint firstItem="ZK1-Ux-8bj" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="G2K-es-Jxq"/>
                             <constraint firstAttribute="trailing" secondItem="HId-y7-Mly" secondAttribute="trailing" constant="10" id="Gsm-PF-CyJ"/>
                             <constraint firstItem="SrT-Kj-alJ" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="JDn-Ij-e1v"/>
+                            <constraint firstItem="8xS-CQ-PIx" firstAttribute="top" secondItem="ZK1-Ux-8bj" secondAttribute="bottom" constant="10" id="L3s-EC-2P1"/>
                             <constraint firstItem="HId-y7-Mly" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="OGX-BF-iaN"/>
+                            <constraint firstAttribute="trailing" secondItem="ZK1-Ux-8bj" secondAttribute="trailing" constant="10" id="S6B-a8-W0c"/>
                             <constraint firstItem="fz3-a2-GPv" firstAttribute="top" secondItem="SrT-Kj-alJ" secondAttribute="bottom" constant="10" id="See-Sr-bTQ"/>
                             <constraint firstItem="vd3-Rm-vWG" firstAttribute="top" secondItem="Zw1-Qn-QDI" secondAttribute="bottom" constant="10" id="YA7-0g-8Gz"/>
+                            <constraint firstItem="8xS-CQ-PIx" firstAttribute="top" secondItem="ZK1-Ux-8bj" secondAttribute="bottom" constant="10" id="aAd-rT-9sX"/>
+                            <constraint firstItem="ZK1-Ux-8bj" firstAttribute="top" secondItem="fz3-a2-GPv" secondAttribute="bottom" constant="10" id="afa-Pe-dKv"/>
                             <constraint firstItem="fz3-a2-GPv" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="bvH-hV-sVs"/>
+                            <constraint firstItem="8xS-CQ-PIx" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="c1f-Rj-oKn"/>
                             <constraint firstAttribute="trailing" secondItem="3T8-22-JqA" secondAttribute="trailing" constant="10" id="eUx-o2-jE7"/>
                             <constraint firstItem="3T8-22-JqA" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="hDP-JV-oEs"/>
                             <constraint firstItem="vd3-Rm-vWG" firstAttribute="leading" secondItem="d49-p9-3aa" secondAttribute="leading" constant="10" id="mGn-Jv-OaY"/>
+                            <constraint firstAttribute="trailing" secondItem="8xS-CQ-PIx" secondAttribute="trailing" constant="10" id="ua9-OF-e2U"/>
                             <constraint firstItem="3T8-22-JqA" firstAttribute="top" secondItem="HId-y7-Mly" secondAttribute="bottom" constant="10" id="wef-P0-TEF"/>
                             <constraint firstAttribute="trailing" secondItem="fz3-a2-GPv" secondAttribute="trailing" constant="10" id="x92-44-Osm"/>
                             <constraint firstAttribute="trailing" secondItem="SrT-Kj-alJ" secondAttribute="trailing" constant="10" id="xzz-pC-RlD"/>
@@ -149,10 +168,12 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="ageTextField" destination="ZK1-Ux-8bj" id="2hl-Ch-aAg"/>
                         <outlet property="cancelNewEmployee" destination="3T8-22-JqA" id="Kps-Q5-9Bn"/>
                         <outlet property="emailTextField" destination="fz3-a2-GPv" id="BjO-Og-jT1"/>
                         <outlet property="firstNameTextField" destination="vd3-Rm-vWG" id="zXm-g2-VdN"/>
                         <outlet property="lastNameTextField" destination="SrT-Kj-alJ" id="lWk-ap-eY6"/>
+                        <outlet property="managerNameTextField" destination="8xS-CQ-PIx" id="d3i-GZ-nkB"/>
                         <outlet property="saveNewEmployee" destination="HId-y7-Mly" id="5LM-A1-9Ml"/>
                     </connections>
                 </viewController>
