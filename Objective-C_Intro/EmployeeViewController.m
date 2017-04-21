@@ -34,6 +34,7 @@
     Employee *employee = employees[indexPath.row];
     
     cell.textLabel.text = employee.firstName;
+    
     return cell;
 }
 
@@ -50,7 +51,7 @@
     }
 }
 
--(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return true;
 }
 
