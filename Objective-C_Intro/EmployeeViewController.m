@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.dataSource = self;    
+    self.tableView.dataSource = self;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -32,8 +32,9 @@
     
     NSArray *employees = [[EmployeeDatabase shared] allEmployees];
     Employee *employee = employees[indexPath.row];
+    //stringWithFormat allowed me to have mupltie values go into the cell
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",employee.firstName, employee.lastName];
     
-    cell.textLabel.text = employee.firstName;
     return cell;
 }
 
@@ -50,7 +51,7 @@
     }
 }
 
--(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return true;
 }
 

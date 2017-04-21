@@ -37,28 +37,16 @@
     }
 }
 
-
 -(instancetype)initWithFirstName: (NSString *) firstName
                         lastname: (NSString *) lastName
                           andAge: (NSNumber *) age {
     self = [super init];
     if (self) {
-        _firstName = firstName;
-        _lastName = lastName;
-        _age = age;
+        _firstName = [firstName retain];
+        _lastName = [lastName retain];
+        _age = [age retain];
     }
     return self;
-}
-
-
-
--(void)walk {
-    NSString *name = [self firstName];
-    NSLog(@"%@I am walking...", name); //%@ is a place holder inside of a string.
-}
-
-+(void)sayHello {
-    NSLog(@"Hello!");
 }
 
 -(id)copyWithZone:(NSZone *)zone {
@@ -69,6 +57,13 @@
     person.age = self.age;
     
     return person;
+}
+
+-(void)dealloc {
+    [_firstName release];
+    [_lastName release];
+    [_age release];
+    [super dealloc];
 }
 
 
