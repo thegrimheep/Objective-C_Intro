@@ -32,7 +32,7 @@
 }
 
 - (IBAction)saveNewEmployee:(id)sender {
-    Employee *employee = [[Employee alloc] initWithFirstName:self.firstNameTextField.text lastName:self.lastNameTextField.text age:nil email:self.emailTextField.text yearsEmployed:nil andManager:nil];
+    Employee *employee = [[Employee alloc] initWithFirstName:self.firstNameTextField.text lastName:self.lastNameTextField.text age:nil email:self.emailTextField.text yearsEmployed:nil andManager:self.managerNameTextField.text];
     
     [[EmployeeDatabase shared] add:employee];
     [self dismissViewControllerAnimated:YES completion:nil];

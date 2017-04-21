@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.dataSource = self;    
+    self.tableView.dataSource = self;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -32,7 +32,7 @@
     
     NSArray *employees = [[EmployeeDatabase shared] allEmployees];
     Employee *employee = employees[indexPath.row];
-    
+    //stringWithFormat allowed me to have mupltie values go into the cell
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",employee.firstName, employee.lastName];
     
     return cell;
